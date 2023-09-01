@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="container"></div>
+
+<script>
+
+  
+
+    const redparagraph =document.createElement('p')
+    redparagraph.style.color ='red'
+    redparagraph.textContent = 'this is a red paragraph'
+
+    const blueheading =document.createElement('h3')
+    blueheading.style.color = 'blue'
+    blueheading.textContent = 'this is a blue heading'
+
+    const pinkdiv =document.createElement('div')
+    pinkdiv.style.background = 'pink'
+    pinkdiv.style.border = '1px solid'
+
+    const innerheading = document.createElement('h1')
+    innerheading.textContent = 'im in a div!'
+
+    const innerparagraph = document.createElement('p')
+    innerparagraph.textContent = 'in a div as well!'
+    pinkdiv.appendChild(innerparagraph)
+    pinkdiv.appendChild(innerheading)
+
+    document.body.appendChild(redparagraph)
+    document.body.appendChild(blueheading)
+    document.body.appendChild(pinkdiv)
+
+</script>
+</body>
+</html>
